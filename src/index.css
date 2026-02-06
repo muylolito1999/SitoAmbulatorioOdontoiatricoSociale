@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --color-primary-50: #e6f7f7;
+  --color-primary-100: #b3e8e9;
+  --color-primary-200: #80d9db;
+  --color-primary-300: #4dcacd;
+  --color-primary-400: #269ea1;
+  --color-primary-500: #0d7377;
+  --color-primary-600: #0a5c5f;
+  --color-primary-700: #074547;
+  --color-primary-800: #042e2f;
+  --color-primary-900: #021717;
+
+  --color-secondary-50: #fdf6e3;
+  --color-secondary-100: #f9e6b3;
+  --color-secondary-200: #f0d080;
+  --color-secondary-300: #e5b94d;
+  --color-secondary-400: #d4a853;
+  --color-secondary-500: #c49a3a;
+  --color-secondary-600: #b8923a;
+  --color-secondary-700: #9a7a2e;
+  --color-secondary-800: #7c6224;
+  --color-secondary-900: #5e4a1b;
+
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-neutral-800);
+  background-color: #ffffff;
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary-500);
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Page transition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Scroll reveal */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.revealed {
+  animation: revealUp 0.6s ease-out forwards;
+}
