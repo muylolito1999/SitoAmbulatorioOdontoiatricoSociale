@@ -8,8 +8,12 @@ export default function Impatto() {
   const { impatto } = content;
 
   return (
-    <section className="bg-primary-500 py-20 sm:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-500 to-primary-600 py-20 sm:py-28">
+      {/* Decorative orbs */}
+      <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-white/5 blur-2xl" />
+      <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-secondary-400/10 blur-3xl" />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <SectionHeading
             title={impatto.title}

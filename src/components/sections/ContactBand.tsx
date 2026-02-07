@@ -7,8 +7,15 @@ export default function ContactBand() {
   const { contactBand, contact } = content;
 
   return (
-    <section className="bg-primary-600 py-16 sm:py-20">
-      <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+    <section className="relative overflow-hidden bg-gradient-to-r from-primary-700 via-primary-600 to-primary-700 py-16 sm:py-20">
+      {/* Gold accent line */}
+      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-secondary-400 to-transparent" />
+
+      {/* Decorative orbs */}
+      <div className="absolute -top-16 -right-16 h-48 w-48 rounded-full bg-white/5 blur-2xl" />
+      <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-secondary-400/10 blur-3xl" />
+
+      <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
         <ScrollReveal>
           <h2 className="text-3xl font-bold text-white md:text-4xl">{contactBand.title}</h2>
           <p className="mt-4 text-lg text-white/80">{contactBand.subtitle}</p>

@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { useContent } from '../hooks/useContent';
 import SectionHeading from '../components/ui/SectionHeading';
 import StatCard from '../components/ui/StatCard';
@@ -10,6 +11,48 @@ const patientSources = [
 ];
 
 const maxSourceValue = Math.max(...patientSources.map((s) => s.value));
+
+function BarItem({ source, delay }: { source: typeof patientSources[number]; delay: number }) {
+  const [visible, setVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setVisible(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.3 },
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref}>
+      <div className="mb-2 flex items-center justify-between">
+        <span className="text-sm font-semibold text-neutral-700">{source.label}</span>
+        <span className="text-sm font-bold text-neutral-900">{source.value}</span>
+      </div>
+      <div className="h-8 w-full overflow-hidden rounded-full bg-neutral-200">
+        <div
+          className="h-full rounded-full transition-all duration-1000 ease-out"
+          style={{
+            width: visible ? `${(source.value / maxSourceValue) * 100}%` : '0%',
+            backgroundColor: source.color,
+            transitionDelay: `${delay}ms`,
+          }}
+        />
+      </div>
+    </div>
+  );
+}
 
 export default function ImpactPage() {
   const { content } = useContent();
@@ -36,7 +79,7 @@ export default function ImpactPage() {
       </section>
 
       {/* SVG Chart: Patient sources */}
-      <section className="bg-neutral-50 py-20 sm:py-28">
+      <section className="bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 py-20 sm:py-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <SectionHeading
@@ -44,27 +87,11 @@ export default function ImpactPage() {
               subtitle="Distribuzione per canale di invio (settembre 2023 — dicembre 2024, 133 pazienti)"
             />
           </ScrollReveal>
-          <ScrollReveal delay={100}>
-            <div className="space-y-6">
-              {patientSources.map((source) => (
-                <div key={source.label}>
-                  <div className="mb-2 flex items-center justify-between">
-                    <span className="text-sm font-semibold text-neutral-700">{source.label}</span>
-                    <span className="text-sm font-bold text-neutral-900">{source.value}</span>
-                  </div>
-                  <div className="h-8 w-full overflow-hidden rounded-full bg-neutral-200">
-                    <div
-                      className="h-full rounded-full transition-all duration-1000 ease-out"
-                      style={{
-                        width: `${(source.value / maxSourceValue) * 100}%`,
-                        backgroundColor: source.color,
-                      }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </ScrollReveal>
+          <div className="space-y-6">
+            {patientSources.map((source, i) => (
+              <BarItem key={source.label} source={source} delay={i * 200} />
+            ))}
+          </div>
 
           {/* Simple SVG donut */}
           <ScrollReveal delay={200}>
