@@ -7,28 +7,30 @@ import ScrollReveal from '../ui/ScrollReveal';
 const borderColors = [
   'border-t-primary-500',
   'border-t-secondary-400',
-  'border-t-primary-400',
-  'border-t-secondary-500',
+  'border-t-green-500',
+  'border-t-red-400',
 ];
 
 const iconBgColors = [
   'bg-primary-50 text-primary-500',
   'bg-secondary-50 text-secondary-500',
-  'bg-primary-50 text-primary-400',
-  'bg-secondary-50 text-secondary-400',
+  'bg-green-50 text-green-600',
+  'bg-red-50 text-red-500',
 ];
 
 const iconMap: Record<string, ReactNode> = {
+  '🤝': (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="h-7 w-7">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M16 3h5v5" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8 3H3v5" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 22c2-2 8-5 8-10V5l-3-2-5 3-5-3-3 2v7c0 5 6 8 8 10z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8 11h2l1 1 2-2 2 2 1-1" />
+    </svg>
+  ),
   '🦷': (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="h-7 w-7">
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 2C9.5 2 7 3.5 7 6.5c0 2 .5 3.5 1 5.5.5 2 1 4.5 1.5 7 .2.8.8 1 1.2 1h.6c.4 0 1-.2 1.2-1 .3-1.5.5-2.5.5-3.5s.2-2 .5-3.5c.5-2 1-3.5 1-5.5C14.5 3.5 14.5 2 12 2z" />
       <path strokeLinecap="round" strokeLinejoin="round" d="M7 6.5C7 3.5 9.5 2 12 2s5 1.5 5 4.5c0 2-.5 3.5-1 5.5-.5 2-1 4.5-1.5 7-.2.8-.8 1-1.2 1h-.6c-.4 0-1-.2-1.2-1-.5-2.5-1-5-1.5-7-.5-2-1-3.5-1-5.5z" />
-    </svg>
-  ),
-  '⚕️': (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="h-7 w-7">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m-8-8h16" />
-      <circle cx="12" cy="12" r="10" strokeLinecap="round" />
     </svg>
   ),
   '🛡️': (
@@ -37,12 +39,9 @@ const iconMap: Record<string, ReactNode> = {
       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
     </svg>
   ),
-  '😊': (
+  '❤️': (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="h-7 w-7">
-      <circle cx="12" cy="12" r="10" />
-      <path strokeLinecap="round" d="M8 14s1.5 2 4 2 4-2 4-2" />
-      <circle cx="9" cy="9.5" r="1" fill="currentColor" stroke="none" />
-      <circle cx="15" cy="9.5" r="1" fill="currentColor" stroke="none" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
     </svg>
   ),
 };

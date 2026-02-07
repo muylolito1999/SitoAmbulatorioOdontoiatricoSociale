@@ -4,7 +4,7 @@ export const defaultContent: SiteContent = {
   hero: {
     title: 'Un sorriso per tutti',
     subtitle:
-      'Cure dentali gratuite per chi non può permettersele. L\'Ambulatorio Odontoiatrico Solidale OdV di Bologna offre assistenza odontoiatrica a persone in situazione di fragilità.',
+      'Cure dentali gratuite per chi non può permettersele.\nL\'Ambulatorio Odontoiatrico Solidale OdV di Bologna\noffre assistenza odontoiatrica a persone in situazione di fragilità.',
     backgroundImage: '',
     ctaPrimary: { text: 'Come funziona', href: '#come-funziona' },
     ctaSecondary: { text: 'Sostienici', href: '/support' },
@@ -13,7 +13,7 @@ export const defaultContent: SiteContent = {
   chiSiamo: {
     title: 'Chi siamo',
     description:
-      'Le malattie del cavo orale colpiscono nel mondo oltre 3,5 miliardi di persone e rappresentano un grave problema di salute pubblica. In Italia, il Servizio Sanitario non sempre garantisce un adeguato livello di cure odontoiatriche alle persone in condizioni di vulnerabilità economica, sia in termini di qualità delle prestazioni sia di tempi di attesa. Le riabilitazioni protesiche sono una realtà di nicchia gestita in pochissime strutture pubbliche, e le persone senza permesso di soggiorno non hanno alcun accesso alle cure. L\'Ambulatorio Odontoiatrico Solidale OdV è nato per rispondere a queste necessità: un\'associazione di volontariato che eroga cure odontoiatriche gratuite a Bologna, grazie a odontoiatri e igienisti dentali di elevata professionalità che operano su base volontaria, supportati da studenti dell\'Università di Bologna con cui è stata stipulata una convenzione di tirocinio curriculare.',
+      'Le malattie del cavo orale colpiscono nel mondo oltre 3,5 miliardi di persone e rappresentano un grave problema di salute pubblica. In Italia, il Servizio Sanitario non sempre garantisce un adeguato livello di cure odontoiatriche alle persone in condizioni di vulnerabilità economica, sia in termini di qualità delle prestazioni sia di tempi di attesa. Le riabilitazioni protesiche sono una realtà di nicchia gestita in pochissime strutture pubbliche, e le persone senza permesso di soggiorno non hanno alcun accesso alle cure. L\'Ambulatorio Odontoiatrico Solidale OdV è nato per rispondere a queste necessità: un\'associazione di volontariato che eroga cure odontoiatriche gratuite a Bologna, grazie a odontoiatri e igienisti dentali di elevata professionalità che operano su base volontaria.',
     image: '',
   },
 
@@ -22,28 +22,28 @@ export const defaultContent: SiteContent = {
     subtitle: 'I nostri servizi per la comunità',
     cards: [
       {
-        icon: '🦷',
-        title: 'Conservativa e Endodonzia',
+        icon: '🤝',
+        title: 'Accoglienza',
         description:
-          'Otturazioni, terapie canalari, ricostruzioni coronali e pulpotomie per il recupero e la conservazione degli elementi dentari.',
+          'Accogliamo le persone in vulnerabilità socio-economica segnalate dai Servizi sociali del Comune di Bologna, da Caritas, da Associazioni di volontariato del territorio.',
       },
       {
-        icon: '⚕️',
-        title: 'Chirurgia e Protesi',
+        icon: '🦷',
+        title: 'Cure Dentali',
         description:
-          'Estrazioni semplici e complesse, germectomie e riabilitazioni protesiche mobili parziali e totali per ripristinare funzione masticatoria ed estetica.',
+          'Igiene orale professionale, terapie conservative, terapie endodontiche, terapie parodontali, estrazioni, terapie chirurgiche, riabilitazioni protesiche mobili, terapie ortodontiche, a titolo gratuito.',
       },
       {
         icon: '🛡️',
-        title: 'Prevenzione e Igiene',
+        title: 'Prevenzione',
         description:
-          'Igiene orale professionale, applicazioni topiche di fluoro, sigillature di solchi e fessure, educazione all\'igiene orale e alla sana alimentazione.',
+          'Educazione a stili di salute orale (sana alimentazione, corretta igiene orale, utilizzo di fluoro, visite periodiche) attraverso programmi di prevenzione dedicati a bambini, adolescenti ed adulti.',
       },
       {
-        icon: '😊',
-        title: 'Ortodonzia',
+        icon: '❤️',
+        title: 'Volontariato',
         description:
-          'Trattamenti ortodontici con arco linguale, espansore palatale e mascherine termostampate per la correzione delle malocclusioni.',
+          'Il nostro team è composto interamente da volontari: odontoiatri, igienisti, assistenti alla poltrona e operatori.',
       },
     ],
   },
@@ -125,12 +125,12 @@ export const defaultContent: SiteContent = {
       {
         title: 'Segnalazione',
         description:
-          'I pazienti sono inviati dai Servizi Sociali del Comune di Bologna (minori e genitori in strutture madre/bambino, minori in affidamento e in comunità), dalla Caritas di Bologna (minori e persone di età superiore ai 70 anni) o da privati che si fanno garanti della vulnerabilità socio-economica della persona.',
+          'I pazienti sono inviati dai Servizi Sociali del Comune di Bologna, dalla Caritas di Bologna, da Associazioni di volontariato del territorio, da privati che si fanno garanti della vulnerabilità socio-economica della persona.',
       },
       {
         title: 'Contatto',
         description:
-          'Il nostro team di accoglienza raccoglie le informazioni necessarie e valuta la situazione del paziente.',
+          'La nostra segreteria raccoglie le informazioni necessarie (dati anagrafici, motivo della segnalazione per evidenziare situazioni di urgenza) e valuta il tempo di attesa per la prima visita.',
       },
       {
         title: 'Prima visita',
@@ -140,12 +140,12 @@ export const defaultContent: SiteContent = {
       {
         title: 'Piano di cura',
         description:
-          'Viene elaborato un piano di trattamento personalizzato, interamente gratuito, che può comprendere cure conservative, endodontiche, chirurgiche, protesiche e ortodontiche.',
+          'L\'odontoiatra elabora un piano di trattamento personalizzato (che può comprendere igiene orale professionale, terapie conservative, endodontiche, chirurgiche, ortodontiche e riabilitazioni protesiche mobili), interamente gratuito, e individua il collega volontario con le competenze professionali idonee a soddisfare le necessità di cura del paziente.',
       },
       {
         title: 'Trattamento',
         description:
-          'Il paziente riceve tutte le cure previste dal piano, con appuntamenti regolari presso il nostro ambulatorio. Le prestazioni sono erogate da odontoiatri di elevata professionalità, supportati da studenti dell\'Università di Bologna.',
+          'Il paziente presso il nostro ambulatorio riceve tutte le cure previste dal piano di trattamento, con appuntamenti regolari. Le prestazioni sono erogate da odontoiatri di elevata professionalità.',
       },
     ],
   },

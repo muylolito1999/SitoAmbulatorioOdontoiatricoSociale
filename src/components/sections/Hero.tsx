@@ -52,7 +52,12 @@ export default function Hero() {
           className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/85 transition-all duration-700 sm:text-xl"
           style={{ opacity: stage >= 2 ? 1 : 0, transform: stage >= 2 ? 'translateY(0)' : 'translateY(24px)' }}
         >
-          {hero.subtitle}
+          {hero.subtitle.split('\n').map((line, i, arr) => (
+            <span key={i}>
+              {line}
+              {i < arr.length - 1 && <br />}
+            </span>
+          ))}
         </p>
         <div
           className="mt-10 flex flex-wrap items-center justify-center gap-4 transition-all duration-700"
