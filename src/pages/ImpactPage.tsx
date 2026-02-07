@@ -41,7 +41,7 @@ export default function ImpactPage() {
           <ScrollReveal>
             <SectionHeading
               title="Provenienza dei pazienti"
-              subtitle="Come arrivano le persone al nostro ambulatorio"
+              subtitle="Distribuzione per canale di invio (settembre 2023 — dicembre 2024, 133 pazienti)"
             />
           </ScrollReveal>
           <ScrollReveal delay={100}>

@@ -13,7 +13,7 @@ export const defaultContent: SiteContent = {
   chiSiamo: {
     title: 'Chi siamo',
     description:
-      'L\'Ambulatorio Odontoiatrico Solidale OdV è un\'associazione di volontariato nata a Bologna con l\'obiettivo di garantire cure dentali gratuite a persone in condizioni di vulnerabilità sociale ed economica. Operiamo grazie a un team di odontoiatri, igienisti dentali e volontari che dedicano il proprio tempo e le proprie competenze a chi ha più bisogno. Il nostro ambulatorio è un luogo di accoglienza, dove ogni paziente viene trattato con dignità e professionalità.',
+      'Le malattie del cavo orale colpiscono nel mondo oltre 3,5 miliardi di persone e rappresentano un grave problema di salute pubblica. In Italia, il Servizio Sanitario non sempre garantisce un adeguato livello di cure odontoiatriche alle persone in condizioni di vulnerabilità economica, sia in termini di qualità delle prestazioni sia di tempi di attesa. Le riabilitazioni protesiche sono una realtà di nicchia gestita in pochissime strutture pubbliche, e le persone senza permesso di soggiorno non hanno alcun accesso alle cure. L\'Ambulatorio Odontoiatrico Solidale OdV è nato per rispondere a queste necessità: un\'associazione di volontariato che eroga cure odontoiatriche gratuite a Bologna, grazie a odontoiatri e igienisti dentali di elevata professionalità che operano su base volontaria, supportati da studenti dell\'Università di Bologna con cui è stata stipulata una convenzione di tirocinio curriculare.',
     image: '',
   },
 
@@ -23,27 +23,27 @@ export const defaultContent: SiteContent = {
     cards: [
       {
         icon: '🦷',
-        title: 'Cure Dentali',
+        title: 'Conservativa e Endodonzia',
         description:
-          'Visite odontoiatriche, estrazioni, otturazioni, protesi e trattamenti conservativi completamente gratuiti.',
+          'Otturazioni, terapie canalari, ricostruzioni coronali e pulpotomie per il recupero e la conservazione degli elementi dentari.',
       },
       {
-        icon: '🤝',
-        title: 'Accoglienza',
+        icon: '⚕️',
+        title: 'Chirurgia e Protesi',
         description:
-          'Accogliamo i pazienti segnalati dai servizi sociali, da Caritas e da altre associazioni del territorio.',
+          'Estrazioni semplici e complesse, germectomie e riabilitazioni protesiche mobili parziali e totali per ripristinare funzione masticatoria ed estetica.',
       },
       {
         icon: '🛡️',
-        title: 'Prevenzione',
+        title: 'Prevenzione e Igiene',
         description:
-          'Sedute di igiene orale, educazione alla salute dentale e programmi di prevenzione per adulti e minori.',
+          'Igiene orale professionale, applicazioni topiche di fluoro, sigillature di solchi e fessure, educazione all\'igiene orale e alla sana alimentazione.',
       },
       {
-        icon: '💛',
-        title: 'Volontariato',
+        icon: '😊',
+        title: 'Ortodonzia',
         description:
-          'Il nostro team è composto interamente da volontari: odontoiatri, igienisti, assistenti alla poltrona e operatori.',
+          'Trattamenti ortodontici con arco linguale, espansore palatale e mascherine termostampate per la correzione delle malocclusioni.',
       },
     ],
   },
@@ -80,34 +80,40 @@ export const defaultContent: SiteContent = {
     subtitle: 'Il percorso dell\'Ambulatorio dalla fondazione ad oggi',
     events: [
       {
+        date: 'Giugno 2022',
+        title: 'Concessione degli spazi',
+        description:
+          'Il Comune di Bologna concede in comodato d\'uso all\'OdV un locale di circa 200 mq, di proprietà ACER, nel quartiere Pilastro in via G. D\'Annunzio 17/a.',
+      },
+      {
         date: 'Settembre 2023',
         title: 'Apertura a Villa Pallavicini',
         description:
-          'L\'ambulatorio apre le porte nella sede di Villa Pallavicini a Bologna, grazie alla collaborazione con il Quartiere Porto-Saragozza e al sostegno di numerosi donatori.',
+          'In attesa della ristrutturazione della sede definitiva, l\'ambulatorio apre all\'interno del complesso Villa Pallavicini, in locali della Fondazione Gesù Divino Operaio, allestiti con risorse dell\'OdV.',
       },
       {
-        date: 'Dicembre 2023',
-        title: 'Prime 50 persone assistite',
+        date: 'Febbraio 2024',
+        title: 'Inizio lavori in Via D\'Annunzio',
         description:
-          'In pochi mesi raggiungiamo i primi 50 pazienti presi in carico, confermando il bisogno reale di cure odontoiatriche gratuite sul territorio.',
+          'Iniziano i lavori di ristrutturazione della sede di Via D\'Annunzio, su progetto dell\'architetto Mario Cucinella, con l\'obiettivo di creare spazi accoglienti per pazienti e operatori.',
       },
       {
-        date: 'Giugno 2024',
-        title: '100 pazienti e oltre 500 prestazioni',
+        date: 'Aprile 2025',
+        title: 'Completamento della ristrutturazione',
         description:
-          'Il numero di pazienti e prestazioni cresce costantemente. L\'ambulatorio diventa un punto di riferimento per i servizi sociali del territorio.',
+          'I lavori di ristrutturazione si concludono dopo oltre un anno, per un importo complessivo di oltre 170.000 €. La ditta CEFLA dona attrezzature per un valore di circa 300.000 €.',
       },
       {
-        date: 'Gennaio 2025',
-        title: '200 pazienti raggiunti',
+        date: '6 Maggio 2025',
+        title: 'Inaugurazione della nuova sede',
         description:
-          'Superiamo la soglia dei 200 pazienti presi in carico, con oltre 1.000 prestazioni erogate gratuitamente.',
+          'La sede di Via D\'Annunzio viene inaugurata con la partecipazione del Sindaco Matteo Lepore, del Vicario Mons. Stefano Ottani e del Magnifico Rettore Giovanni Molari, alla presenza di oltre 250 persone.',
       },
       {
-        date: 'Maggio 2025',
-        title: 'Nuova sede in Via D\'Annunzio',
+        date: 'Novembre 2025',
+        title: 'Autorizzazione sanitaria',
         description:
-          'L\'ambulatorio si trasferisce nella nuova sede di Via Gabriele D\'Annunzio 19, più ampia e meglio attrezzata per rispondere alla crescente domanda.',
+          'L\'ambulatorio ottiene l\'autorizzazione sanitaria con atto del Comune di Bologna, completando il percorso di accreditamento della nuova sede.',
       },
     ],
   },
@@ -119,7 +125,7 @@ export const defaultContent: SiteContent = {
       {
         title: 'Segnalazione',
         description:
-          'Il paziente viene segnalato dai servizi sociali, da Caritas, da associazioni del territorio o può contattarci direttamente.',
+          'I pazienti sono inviati dai Servizi Sociali del Comune di Bologna (minori e genitori in strutture madre/bambino, minori in affidamento e in comunità), dalla Caritas di Bologna (minori e persone di età superiore ai 70 anni) o da privati che si fanno garanti della vulnerabilità socio-economica della persona.',
       },
       {
         title: 'Contatto',
@@ -129,17 +135,17 @@ export const defaultContent: SiteContent = {
       {
         title: 'Prima visita',
         description:
-          'Il paziente viene visitato dai nostri odontoiatri volontari per una valutazione completa dello stato di salute orale.',
+          'Il paziente viene visitato dai nostri odontoiatri volontari per una valutazione completa dello stato di salute orale, con eventuali esami radiografici.',
       },
       {
         title: 'Piano di cura',
         description:
-          'Viene elaborato un piano di trattamento personalizzato, interamente gratuito, con le cure necessarie.',
+          'Viene elaborato un piano di trattamento personalizzato, interamente gratuito, che può comprendere cure conservative, endodontiche, chirurgiche, protesiche e ortodontiche.',
       },
       {
         title: 'Trattamento',
         description:
-          'Il paziente riceve tutte le cure previste dal piano, con appuntamenti regolari presso il nostro ambulatorio.',
+          'Il paziente riceve tutte le cure previste dal piano, con appuntamenti regolari presso il nostro ambulatorio. Le prestazioni sono erogate da odontoiatri di elevata professionalità, supportati da studenti dell\'Università di Bologna.',
       },
     ],
   },
@@ -149,34 +155,37 @@ export const defaultContent: SiteContent = {
     subtitle: 'Come utilizziamo le risorse',
     highlights: [
       {
-        label: 'Valore servizi erogati',
-        value: '€80.463',
-        description: 'Valore economico delle prestazioni odontoiatriche gratuite fornite ai pazienti',
-      },
-      {
-        label: 'Costi sostenuti',
+        label: 'Valore prestazioni erogate',
         value: '€87.453',
-        description: 'Costi operativi per materiali, attrezzature e gestione dell\'ambulatorio',
+        description: 'Valore economico delle terapie odontoiatriche erogate gratuitamente (settembre 2023 — dicembre 2024)',
       },
       {
-        label: 'Fonti di finanziamento',
-        value: '5x1000, donazioni, bandi',
-        description: 'L\'ambulatorio si sostiene grazie al 5x1000, donazioni private e bandi di fondazioni',
+        label: 'Attrezzature donate da CEFLA',
+        value: '~€300.000',
+        description: '3 riuniti odontoiatrici, 2 radiografici endorali, un ortopantomografo di ultima generazione e la linea di sterilizzazione',
+      },
+      {
+        label: 'Ristrutturazione sede',
+        value: '€170.000+',
+        description: 'Costo dei lavori di ristrutturazione della sede di Via D\'Annunzio, su progetto dell\'arch. Mario Cucinella',
       },
     ],
-    note: 'Tutti i professionisti operano a titolo di volontariato. I fondi raccolti sono destinati esclusivamente a materiali di consumo, attrezzature e costi di gestione.',
+    note: 'Tutti i professionisti operano a titolo di volontariato, a titolo gratuito. L\'OdV si sostiene grazie al 5x1000, donazioni private e bandi di fondazioni. Le attività amministrative, di segreteria e di sterilizzazione sono svolte da volontari di elevata qualificazione.',
   },
 
   partner: {
     title: 'I nostri sostenitori',
     subtitle: 'Grazie a chi rende possibile il nostro lavoro',
     partners: [
-      'Fondazione AZIMUT',
-      'Caritas Diocesana di Bologna',
+      'AZIMUT',
+      'Caritas di Bologna',
+      'CEFLA',
+      'Comitato dividendi FAAC dell\'Arcidiocesi di Bologna',
       'Fondazione Cassa di Risparmio in Bologna',
       'Fondazione del Monte di Bologna e Ravenna',
+      'Fondazione Marchesini',
       'UNICREDIT',
-      'Quartiere Porto-Saragozza',
+      'Alma Mater Studiorum — Università di Bologna',
     ],
   },
 
@@ -188,39 +197,59 @@ export const defaultContent: SiteContent = {
   contact: {
     email: 'ambulatoriosolidale.bologna@gmail.com',
     phone: '+39 375 531 1887',
-    address: 'Via Gabriele D\'Annunzio 19, 40137 Bologna',
+    address: 'Via Gabriele D\'Annunzio 17/a, 40137 Bologna',
   },
 
   about: {
     title: 'La nostra missione',
     mission:
-      'Garantire l\'accesso alle cure odontoiatriche a tutte le persone che, per ragioni economiche o sociali, non possono permettersi trattamenti dentali. Crediamo che la salute orale sia un diritto fondamentale e lavoriamo ogni giorno per renderlo accessibile a tutti.',
+      'Creare ambulatori dedicati che accolgano i pazienti in un clima di serenità e di accudimento, presso i quali erogare terapie odontoiatriche e riabilitazioni protesiche a titolo gratuito. Creare un gruppo di odontoiatri e igienisti dentali che su base volontaria eroghi le necessarie terapie. Fornire ai pazienti in condizione di disagio sociale informazioni utili per prevenire le malattie del cavo orale attraverso l\'educazione all\'igiene orale domiciliare e alla sana alimentazione.',
     vision:
-      'Un mondo in cui nessuno debba rinunciare alla salute orale per mancanza di risorse. Lavoriamo per una società più giusta, dove la solidarietà e il volontariato colmano le lacune del sistema sanitario.',
+      'A titolo gratuito garantire le cure odontoiatriche e promuovere la salute orale in persone in condizione di disagio sociale e difficoltà economiche tali da impedire l\'accesso alle strutture odontoiatriche, anche presso il Servizio Sanitario.',
     history:
-      'L\'Ambulatorio Odontoiatrico Solidale nasce nel settembre 2023 a Bologna, dalla visione di un gruppo di odontoiatri e cittadini che hanno deciso di mettere le proprie competenze al servizio della comunità. In meno di due anni, l\'associazione ha preso in carico oltre 248 pazienti, erogando più di 1.180 prestazioni odontoiatriche gratuite. Nel maggio 2025, l\'ambulatorio si è trasferito nella nuova sede di Via D\'Annunzio, più ampia e attrezzata.',
+      'Nel 2022 il Comune di Bologna ha concesso in comodato d\'uso all\'OdV un locale di circa 200 mq nel quartiere Pilastro, in via G. D\'Annunzio 17/a. In attesa dei fondi per la ristrutturazione, nel settembre 2023 l\'ambulatorio ha aperto all\'interno del complesso Villa Pallavicini, in locali della Fondazione Gesù Divino Operaio, ristrutturati e allestiti con risorse dell\'OdV. I lavori di ristrutturazione della sede di Via D\'Annunzio, su progetto dell\'architetto Mario Cucinella, sono iniziati nel febbraio 2024 e terminati nell\'aprile 2025, per un importo di oltre 170.000 €. La ditta CEFLA ha donato 3 riuniti odontoiatrici, 2 radiografici per rx endorali, un ortopantomografo di ultima generazione e la linea di sterilizzazione, per un valore di circa 300.000 €. L\'inaugurazione si è svolta il 6 maggio 2025 con la partecipazione del Sindaco Matteo Lepore, del Vicario Mons. Stefano Ottani e del Magnifico Rettore Giovanni Molari. L\'ambulatorio ha ottenuto l\'autorizzazione sanitaria nel novembre 2025.',
   },
 
   founders: {
     title: 'I fondatori',
     names: [
-      'Dott. Marco Bianchi',
-      'Dott.ssa Laura Rossi',
-      'Dott. Giuseppe Verdi',
-      'Dott.ssa Anna Russo',
-      'Sig. Paolo Colombo',
-      'Sig.ra Maria Esposito',
+      'Maria Giovanna Barboni',
+      'Simone Bagattoni',
+      'Francesco Basile',
+      'Corrado Bondi',
+      'Duccio Caccioni',
+      'Claudio Carboni',
+      'Gianalberto Cavazza',
+      'Marco Cippone',
+      'Mario Cucinella',
+      'Luca De Poli',
+      'Mirella Falconi',
+      'Claudio Marchetti',
+      'Annalisa Mazzoni',
+      'Roberto Morgantini',
+      'Marina Orlandi Biagi',
+      'Gabriela Piana',
+      'Massimo Ruggiano',
+      'Martina Stefanini',
+      'Teresa Tagariello',
+      'Stefano Zanetti',
     ],
   },
 
   board: {
     title: 'Il Consiglio Direttivo',
     members: [
-      { name: 'Dott. Marco Bianchi', role: 'Presidente' },
-      { name: 'Dott.ssa Laura Rossi', role: 'Vicepresidente' },
-      { name: 'Dott. Giuseppe Verdi', role: 'Segretario' },
-      { name: 'Sig. Paolo Colombo', role: 'Tesoriere' },
-      { name: 'Dott.ssa Anna Russo', role: 'Consigliere' },
+      { name: 'Gabriela Piana', role: 'Presidente' },
+      { name: 'Claudio Carboni', role: 'Vicepresidente' },
+      { name: 'Gianalberto Cavazza', role: 'Tesoriere' },
+      { name: 'Martina Stefanini', role: 'Segretaria' },
+      { name: 'Duccio Caccioni', role: 'Consigliere' },
+      { name: 'Don Marco Cippone', role: 'Consigliere' },
+      { name: 'Luca De Poli', role: 'Consigliere' },
+      { name: 'Roberto Morgantini', role: 'Consigliere' },
+      { name: 'Cesare Nucci', role: 'Consigliere' },
+      { name: 'Marina Orlandi Biagi', role: 'Consigliere' },
+      { name: 'Giulio Giuseppe Sangiorgio', role: 'Consigliere' },
     ],
   },
 
