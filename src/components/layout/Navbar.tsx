@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Chi Siamo', href: '/about' },
   { label: 'Impatto', href: '/impact' },
   { label: 'Sostieni', href: '/support' },
+  { label: 'Volontariato', href: '/volunteer' },
   { label: 'Contatti', href: '/contact' },
 ];
 

@@ -5,7 +5,7 @@ import StatCard from '../components/ui/StatCard';
 import ScrollReveal from '../components/ui/ScrollReveal';
 
 const patientSources = [
-  { label: 'Servizi sociali', value: 72, color: '#0d7377' },
+  { label: 'Servizi sociali', value: 72, color: '#0059ff' },
   { label: 'Caritas', value: 41, color: '#d4a853' },
   { label: 'Privati / Altro', value: 20, color: '#64748b' },
 ];

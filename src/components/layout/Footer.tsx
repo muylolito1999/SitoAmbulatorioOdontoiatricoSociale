@@ -6,6 +6,7 @@ const navLinks = [
   { label: 'Chi Siamo', href: '/about' },
   { label: 'Impatto', href: '/impact' },
   { label: 'Sostieni', href: '/support' },
+  { label: 'Volontariato', href: '/volunteer' },
   { label: 'Contatti', href: '/contact' },
 ];
 
@@ -74,6 +75,9 @@ export default function Footer() {
           <p>
             &copy; {new Date().getFullYear()} {content.navbar.brandName} &mdash;
             Associazione di Volontariato
+          </p>
+          <p className="mt-4 text-xs text-neutral-600">
+            L'Ambulatorio Odontoiatrico Solidale OdV tratta i dati personali nel pieno rispetto del GDPR (Reg. UE 2016/679). Per maggiori informazioni, contattare la segreteria.
           </p>
         </div>
       </div>

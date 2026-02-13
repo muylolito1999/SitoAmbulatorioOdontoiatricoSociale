@@ -2,9 +2,9 @@ import type { SiteContent } from './types';
 
 export const defaultContent: SiteContent = {
   hero: {
-    title: 'Un sorriso per tutti',
+    title: 'Ambulatorio Odontoiatrico Solidale',
     subtitle:
-      'Cure dentali gratuite per chi non può permettersele.\nL\'Ambulatorio Odontoiatrico Solidale OdV di Bologna\noffre assistenza odontoiatrica a persone in situazione di fragilità.',
+      'Fragilità sociale ed economica\nAmbulatorio Odontoiatrico Solidale dedicato alle persone emarginate e disagiate: cure odontoiatriche gratuite per chi non può permettersele, un sorriso per tutti.\nUn progetto da sostenere, un modello da riprodurre!',
     backgroundImage: '',
     ctaPrimary: { text: 'Come funziona', href: '#come-funziona' },
     ctaSecondary: { text: 'Sostienici', href: '/support' },
@@ -13,7 +13,7 @@ export const defaultContent: SiteContent = {
   chiSiamo: {
     title: 'Chi siamo',
     description:
-      'Le malattie del cavo orale colpiscono nel mondo oltre 3,5 miliardi di persone e rappresentano un grave problema di salute pubblica. In Italia, il Servizio Sanitario non sempre garantisce un adeguato livello di cure odontoiatriche alle persone in condizioni di vulnerabilità economica, sia in termini di qualità delle prestazioni sia di tempi di attesa. Le riabilitazioni protesiche sono una realtà di nicchia gestita in pochissime strutture pubbliche, e le persone senza permesso di soggiorno non hanno alcun accesso alle cure. L\'Ambulatorio Odontoiatrico Solidale OdV è nato per rispondere a queste necessità: un\'associazione di volontariato che eroga cure odontoiatriche gratuite a Bologna, grazie a odontoiatri e igienisti dentali di elevata professionalità che operano su base volontaria.',
+      'Le malattie del cavo orale colpiscono nel mondo oltre 3,5 miliardi di persone e rappresentano un grave problema di salute pubblica. In Italia, il Servizio Sanitario non sempre garantisce un adeguato livello di cure odontoiatriche alle persone in condizioni di vulnerabilità economica, sia in termini di qualità delle prestazioni sia di tempi di attesa. Le riabilitazioni protesiche sono una realtà di nicchia gestita in pochissime strutture pubbliche, e le persone senza permesso di soggiorno non hanno alcun accesso alle cure. L\'Ambulatorio Odontoiatrico Solidale OdV è nato per rispondere a queste necessità: un\'associazione di volontariato che eroga cure odontoiatriche gratuite a Bologna, grazie a odontoiatri e igienisti dentali di elevata professionalità che operano su base volontaria. Contrastiamo le disuguaglianze sociali offrendo cure odontoiatriche gratuite e di qualità alle persone in condizioni di fragilità economica e sociale a Bologna,migliorando salute, dignità e inclusione.',  
     image: '',
   },
 
@@ -31,7 +31,7 @@ export const defaultContent: SiteContent = {
         icon: '🦷',
         title: 'Cure Dentali',
         description:
-          'Igiene orale professionale, terapie conservative, terapie endodontiche, terapie parodontali, estrazioni, terapie chirurgiche, riabilitazioni protesiche mobili, terapie ortodontiche, a titolo gratuito.',
+          'Detartrasi, igiene orale professionale, terapie conservative, terapie endodontiche, terapie parodontali, estrazioni, terapie chirurgiche, riabilitazioni protesiche mobili, prestazioni di odontoiatria pediatrica, terapie ortopedico-ortodontiche, a titolo gratuito.',
       },
       {
         icon: '🛡️',
@@ -43,7 +43,7 @@ export const defaultContent: SiteContent = {
         icon: '❤️',
         title: 'Volontariato',
         description:
-          'Il nostro team è composto interamente da volontari: odontoiatri, igienisti, assistenti alla poltrona e operatori.',
+          'Il nostro team è composto interamente da volontari: odontoiatri, igienisti dentali, assistenti alla poltrona e operatori socio sanitari e amministrativi.',
       },
     ],
   },
@@ -77,7 +77,7 @@ export const defaultContent: SiteContent = {
 
   timeline: {
     title: 'La nostra storia',
-    subtitle: 'Il percorso dell\'Ambulatorio dalla fondazione ad oggi',
+    subtitle: 'Il percorso dell\'Ambulatorio Odontoiatrico Solidale dalla fondazione ad oggi',
     events: [
       {
         date: 'Giugno 2022',
@@ -120,8 +120,13 @@ export const defaultContent: SiteContent = {
 
   comeFunziona: {
     title: 'Come funziona',
-    subtitle: 'Il percorso di accesso alle cure',
+    subtitle: 'Tutti i trattamenti sono eseguiti da professionisti qualificati e iscritti all\'albo, utilizzando materiali certificati e seguendo i più alti standard di sicurezza e igiene.',
     steps: [
+      {
+        title: 'Contatto Iniziale',
+        description:
+          'Telefonare o inviare email alla segreteria per richiedere informazioni.',
+      },
       {
         title: 'Segnalazione',
         description:
@@ -143,9 +148,9 @@ export const defaultContent: SiteContent = {
           'L\'odontoiatra elabora un piano di trattamento personalizzato (che può comprendere igiene orale professionale, terapie conservative, endodontiche, chirurgiche, ortodontiche e riabilitazioni protesiche mobili), interamente gratuito, e individua il collega volontario con le competenze professionali idonee a soddisfare le necessità di cura del paziente.',
       },
       {
-        title: 'Trattamento',
+        title: 'Risoluzione del caso',
         description:
-          'Il paziente presso il nostro ambulatorio riceve tutte le cure previste dal piano di trattamento, con appuntamenti regolari. Le prestazioni sono erogate da odontoiatri di elevata professionalità.',
+          'Il paziente presso il nostro ambulatorio riceve tutte le cure previste dal piano di trattamento, con appuntamenti regolari. Le prestazioni sono erogate da odontoiatri e igienisti dentali di elevata professionalità.',
       },
     ],
   },
@@ -160,7 +165,7 @@ export const defaultContent: SiteContent = {
         description: 'Valore economico delle terapie odontoiatriche erogate gratuitamente (settembre 2023 — dicembre 2024)',
       },
       {
-        label: 'Attrezzature donate da CEFLA',
+        label: 'Attrezzature odontoiatriche donate da CEFLA',
         value: '~€300.000',
         description: '3 riuniti odontoiatrici, 2 radiografici endorali, un ortopantomografo di ultima generazione e la linea di sterilizzazione',
       },
@@ -170,7 +175,7 @@ export const defaultContent: SiteContent = {
         description: 'Costo dei lavori di ristrutturazione della sede di Via D\'Annunzio, su progetto dell\'arch. Mario Cucinella',
       },
     ],
-    note: 'Tutti i professionisti operano a titolo di volontariato, a titolo gratuito. L\'OdV si sostiene grazie al 5x1000, donazioni private e bandi di fondazioni. Le attività amministrative, di segreteria e di sterilizzazione sono svolte da volontari di elevata qualificazione.',
+    note: 'Tutte le prestazioni odontoiatriche sono erogate da professionisti volontari di elevata qualificazione professionale, che operano a titolo gratuito. L\'OdV si sostiene grazie a bandi di fondazioni, a donazioni di associazioni e di privati, al 5x1000. Le attività amministrative, di segreteria sono svolte da volontari.',
   },
 
   partner: {
@@ -186,11 +191,14 @@ export const defaultContent: SiteContent = {
       'Fondazione Marchesini',
       'UNICREDIT',
       'Alma Mater Studiorum — Università di Bologna',
+      'Lions',
+      'Rotary',
+      'Teddy Group',
     ],
   },
 
   contactBand: {
-    title: 'Hai bisogno di aiuto?',
+    title: 'Hai bisogno di noi?',
     subtitle: 'Contattaci per informazioni sulle cure o per sapere come sostenerci',
   },
 
@@ -258,9 +266,7 @@ export const defaultContent: SiteContent = {
     description:
       'Il tuo contributo ci aiuta a garantire cure dentali gratuite a chi ne ha più bisogno. Ogni donazione, grande o piccola, fa la differenza.',
     donateText:
-      'Puoi sostenere l\'Ambulatorio Odontoiatrico Solidale con una donazione tramite bonifico bancario o destinando il tuo 5x1000. Ogni euro raccolto viene utilizzato per acquistare materiali di consumo, attrezzature odontoiatriche e sostenere i costi di gestione dell\'ambulatorio.',
-    volunteerText:
-      'Cerchiamo odontoiatri, igienisti dentali, assistenti alla poltrona e volontari per l\'accoglienza e la segreteria. Se vuoi donare il tuo tempo e le tue competenze, contattaci!',
+      'L\'Ambulatorio Odontoiatrico Solidale opera esclusivamente grazie alle donazioni di privati cittadini, aziende e fondazioni. Il tuo contributo è fondamentale per continuare a garantire cure gratuite a chi ne ha bisogno.',
     donateIban: 'IT00 A000 0000 0000 0000 0000 000',
   },
 

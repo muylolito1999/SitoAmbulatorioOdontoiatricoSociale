@@ -115,7 +115,7 @@ export interface SupportPageContent {
   title: string;
   description: string;
   donateText: string;
-  volunteerText: string;
+  volunteerText?: string;
   donateIban: string;
 }
 

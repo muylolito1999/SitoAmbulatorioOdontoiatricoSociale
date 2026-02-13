@@ -7,6 +7,7 @@ const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ImpactPage = lazy(() => import('./pages/ImpactPage'));
 const SupportPage = lazy(() => import('./pages/SupportPage'));
+const VolunteerPage = lazy(() => import('./pages/VolunteerPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const AdminPage = lazy(() => import('./pages/AdminPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
@@ -53,6 +54,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <SupportPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'volunteer',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <VolunteerPage />
           </Suspense>
         ),
       },
