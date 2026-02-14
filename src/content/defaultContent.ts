@@ -84,6 +84,7 @@ export const defaultContent: SiteContent = {
         title: 'Concessione degli spazi',
         description:
           'Il Comune di Bologna concede in comodato d\'uso all\'OdV un locale di circa 200 mq, di proprietà ACER, nel quartiere Pilastro in via G. D\'Annunzio 17/a.',
+        images: ['/images/timeline/concessione-spazi.png'],
       },
       {
         date: 'Settembre 2023',
@@ -96,12 +97,14 @@ export const defaultContent: SiteContent = {
         title: 'Inizio lavori in Via D\'Annunzio',
         description:
           'Iniziano i lavori di ristrutturazione della sede di Via D\'Annunzio, su progetto dell\'architetto Mario Cucinella, con l\'obiettivo di creare spazi accoglienti per pazienti e operatori.',
+        images: ['/images/timeline/inizio-lavori.png'],
       },
       {
         date: 'Aprile 2025',
         title: 'Completamento della ristrutturazione',
         description:
           'I lavori di ristrutturazione si concludono dopo oltre un anno, per un importo complessivo di oltre 170.000 €. La ditta CEFLA dona attrezzature per un valore di circa 300.000 €.',
+        images: ['/images/timeline/completamento-1.png', '/images/timeline/completamento-2.png', '/images/timeline/completamento-3.png'],
       },
       {
         date: '6 Maggio 2025',
@@ -311,7 +314,7 @@ export const defaultContent: SiteContent = {
   },
 
   navbar: {
-    brandName: 'Ambulatorio Solidale',
+    brandName: 'Ambulatorio Odontoiatrico Solidale',
   },
 
   footer: {

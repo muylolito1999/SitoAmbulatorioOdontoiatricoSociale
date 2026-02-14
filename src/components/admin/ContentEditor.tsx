@@ -53,7 +53,7 @@ const fieldDefs: Record<SectionKey, { key: string; label: string; type: 'text' |
   timeline: [
     { key: 'title', label: 'Titolo', type: 'text' },
     { key: 'subtitle', label: 'Sottotitolo', type: 'text' },
-    { key: 'events', label: 'Eventi', type: 'array-object', objectFields: [{ key: 'date', label: 'Data' }, { key: 'title', label: 'Titolo' }, { key: 'description', label: 'Descrizione' }] },
+    { key: 'events', label: 'Eventi', type: 'array-object', objectFields: [{ key: 'date', label: 'Data' }, { key: 'title', label: 'Titolo' }, { key: 'description', label: 'Descrizione' }, { key: 'images', label: 'Immagini (percorsi separati da virgola)' }] },
   ],
   comeFunziona: [
     { key: 'title', label: 'Titolo', type: 'text' },

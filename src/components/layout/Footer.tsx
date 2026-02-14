@@ -19,7 +19,10 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-white">{content.navbar.brandName}</h3>
+            <div className="flex items-center gap-2">
+              <img src="/logo.png" alt="" className="h-8 w-auto" />
+              <h3 className="text-lg font-bold text-white">{content.navbar.brandName}</h3>
+            </div>
             <p className="mt-3 text-sm leading-relaxed text-neutral-400">
               {content.footer.description}
             </p>

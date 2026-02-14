@@ -89,10 +89,11 @@ export default function Navbar() {
         <Link
           to="/"
           className={cn(
-            'text-xl font-bold transition-colors',
+            'flex items-center gap-2 text-base font-bold transition-colors',
             isSolid ? 'text-primary-500' : 'text-white',
           )}
         >
+          <img src="/logo.png" alt="" className="h-8 w-auto" />
           {content.navbar.brandName}
         </Link>
 
