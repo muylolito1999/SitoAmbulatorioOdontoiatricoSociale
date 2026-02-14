@@ -111,12 +111,35 @@ export interface BoardContent {
   members: BoardMember[];
 }
 
+export interface DonationCard {
+  title: string;
+  description: string;
+}
+
 export interface SupportPageContent {
   title: string;
   description: string;
   donateText: string;
-  volunteerText?: string;
   donateIban: string;
+  donationCards: DonationCard[];
+  bankIntestatario: string;
+  bankCausale: string;
+  taxNote: string;
+  cinquePerMilleCF: string;
+  cinquePerMilleText: string;
+}
+
+export interface VolunteerRole {
+  title: string;
+  items: string[];
+}
+
+export interface VolunteerPageContent {
+  title: string;
+  description: string;
+  roles: VolunteerRole[];
+  benefits: string[];
+  ctaText: string;
 }
 
 export interface NavbarContent {
@@ -142,6 +165,7 @@ export interface SiteContent {
   founders: FoundersContent;
   board: BoardContent;
   supportPage: SupportPageContent;
+  volunteerPage: VolunteerPageContent;
   navbar: NavbarContent;
   footer: FooterContent;
 }

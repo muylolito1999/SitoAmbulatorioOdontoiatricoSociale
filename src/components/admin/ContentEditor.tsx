@@ -24,6 +24,7 @@ const sections: { key: SectionKey; label: string }[] = [
   { key: 'founders', label: 'Fondatori' },
   { key: 'board', label: 'Consiglio' },
   { key: 'supportPage', label: 'Sostieni' },
+  { key: 'volunteerPage', label: 'Volontariato' },
   { key: 'navbar', label: 'Navbar' },
   { key: 'footer', label: 'Footer' },
 ];
@@ -97,8 +98,19 @@ const fieldDefs: Record<SectionKey, { key: string; label: string; type: 'text' |
     { key: 'title', label: 'Titolo', type: 'text' },
     { key: 'description', label: 'Descrizione', type: 'textarea' },
     { key: 'donateText', label: 'Testo donazioni', type: 'textarea' },
-    { key: 'volunteerText', label: 'Testo volontariato', type: 'textarea' },
+    { key: 'donationCards', label: 'Tipi di donazione', type: 'array-object', objectFields: [{ key: 'title', label: 'Titolo' }, { key: 'description', label: 'Descrizione' }] },
     { key: 'donateIban', label: 'IBAN', type: 'text' },
+    { key: 'bankIntestatario', label: 'Intestatario conto', type: 'text' },
+    { key: 'bankCausale', label: 'Causale', type: 'text' },
+    { key: 'taxNote', label: 'Nota deducibilità fiscale', type: 'textarea' },
+    { key: 'cinquePerMilleCF', label: 'Codice Fiscale 5x1000', type: 'text' },
+    { key: 'cinquePerMilleText', label: 'Testo 5x1000', type: 'textarea' },
+  ],
+  volunteerPage: [
+    { key: 'title', label: 'Titolo', type: 'text' },
+    { key: 'description', label: 'Descrizione', type: 'textarea' },
+    { key: 'benefits', label: 'Cosa offriamo', type: 'array-text' },
+    { key: 'ctaText', label: 'Testo invito', type: 'textarea' },
   ],
   navbar: [
     { key: 'brandName', label: 'Nome brand', type: 'text' },

@@ -268,6 +268,46 @@ export const defaultContent: SiteContent = {
     donateText:
       'L\'Ambulatorio Odontoiatrico Solidale opera esclusivamente grazie alle donazioni di privati cittadini, aziende e fondazioni. Il tuo contributo è fondamentale per continuare a garantire cure gratuite a chi ne ha bisogno.',
     donateIban: 'IT00 A000 0000 0000 0000 0000 000',
+    donationCards: [
+      {
+        title: 'Donazione Economica',
+        description: 'Anche un piccolo contributo ci permette di acquistare materiali, strumenti, manufatti protesici e ortodontici e mantenere la struttura efficiente.',
+      },
+      {
+        title: 'Donazione di Materiali',
+        description: 'Materiali odontoiatrici, strumenti professionali, attrezzature medicali sono sempre necessari.',
+      },
+      {
+        title: 'Sostegno Aziendale',
+        description: 'La tua azienda può sostenere le nostre attività attraverso donazioni, sponsorizzazioni, progetti di Corporate Social Responsibility (CSR).',
+      },
+    ],
+    bankIntestatario: 'Ambulatorio Odontoiatrico Solidale OdV',
+    bankCausale: 'Donazione liberale',
+    taxNote: 'Tutte le donazioni sono fiscalmente deducibili. Conserva la ricevuta del bonifico per la dichiarazione dei redditi.',
+    cinquePerMilleCF: 'XXXXXXXXXXXXXXXX',
+    cinquePerMilleText: 'Puoi destinare il tuo 5x1000 all\'Ambulatorio Odontoiatrico Solidale OdV. È un gesto che non ti costa nulla ma fa una grande differenza!',
+  },
+
+  volunteerPage: {
+    title: 'Diventa Volontario',
+    description: 'L\'ambulatorio vive grazie al contributo di volontari che mettono a disposizione il loro tempo, le loro competenze e la loro passione per aiutare chi ha bisogno.',
+    roles: [
+      {
+        title: 'Professionisti Sanitari',
+        items: ['Odontoiatri', 'Igienisti dentali', 'Assistenti alla poltrona', 'Odontotecnici'],
+      },
+      {
+        title: 'Supporto Organizzativo',
+        items: ['Accoglienza pazienti', 'Gestione appuntamenti', 'Supporto amministrativo', 'Comunicazione e fundraising'],
+      },
+    ],
+    benefits: [
+      'Formazione continua e aggiornamento professionale a cadenza mensile',
+      'Assicurazione per lo svolgimento dell\'attività',
+      'Attestati di partecipazione e certificazioni',
+    ],
+    ctaText: 'Sei interessato? Contattaci per maggiori informazioni su come diventare volontario. Ogni contributo, anche di poche ore al mese, fa la differenza!',
   },
 
   navbar: {
