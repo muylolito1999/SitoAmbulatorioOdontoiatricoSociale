@@ -20,6 +20,8 @@ function Loading() {
   );
 }
 
+const showImpact = import.meta.env.VITE_SHOW_IMPACT === 'true';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -41,14 +43,18 @@ const router = createBrowserRouter([
           </Suspense>
         ),
       },
-      {
-        path: 'impact',
-        element: (
-          <Suspense fallback={<Loading />}>
-            <ImpactPage />
-          </Suspense>
-        ),
-      },
+      ...(showImpact
+        ? [
+            {
+              path: 'impact',
+              element: (
+                <Suspense fallback={<Loading />}>
+                  <ImpactPage />
+                </Suspense>
+              ),
+            },
+          ]
+        : []),
       {
         path: 'support',
         element: (

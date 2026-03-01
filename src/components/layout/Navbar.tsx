@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router';
 import { useContent } from '../../hooks/useContent';
 import { cn } from '../../lib/cn';
 
-const navLinks = [
+const allNavLinks = [
   { label: 'Home', href: '/' },
   { label: 'Chi Siamo', href: '/about' },
   { label: 'Impatto', href: '/impact' },
@@ -11,6 +11,10 @@ const navLinks = [
   { label: 'Volontariato', href: '/volunteer' },
   { label: 'Contatti', href: '/contact' },
 ];
+
+const navLinks = import.meta.env.VITE_SHOW_IMPACT === 'true'
+  ? allNavLinks
+  : allNavLinks.filter((l) => l.href !== '/impact');
 
 /** Scroll‑direction threshold in px – avoids jitter on tiny scrolls */
 const SCROLL_DELTA = 8;

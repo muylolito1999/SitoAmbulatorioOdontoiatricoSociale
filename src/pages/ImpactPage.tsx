@@ -92,50 +92,6 @@ export default function ImpactPage() {
               <BarItem key={source.label} source={source} delay={i * 200} />
             ))}
           </div>
-
-          {/* Simple SVG donut */}
-          <ScrollReveal delay={200}>
-            <div className="mt-16 flex flex-col items-center">
-              <svg viewBox="0 0 200 200" className="h-48 w-48">
-                {(() => {
-                  const total = patientSources.reduce((s, p) => s + p.value, 0);
-                  let offset = 0;
-                  const circumference = 2 * Math.PI * 70;
-                  return patientSources.map((source) => {
-                    const pct = source.value / total;
-                    const dashArray = `${pct * circumference} ${circumference}`;
-                    const dashOffset = -offset * circumference;
-                    offset += pct;
-                    return (
-                      <circle
-                        key={source.label}
-                        cx="100"
-                        cy="100"
-                        r="70"
-                        fill="none"
-                        stroke={source.color}
-                        strokeWidth="30"
-                        strokeDasharray={dashArray}
-                        strokeDashoffset={dashOffset}
-                        transform="rotate(-90 100 100)"
-                      />
-                    );
-                  });
-                })()}
-              </svg>
-              <div className="mt-6 flex flex-wrap justify-center gap-6">
-                {patientSources.map((source) => (
-                  <div key={source.label} className="flex items-center gap-2 text-sm">
-                    <span
-                      className="inline-block h-3 w-3 rounded-full"
-                      style={{ backgroundColor: source.color }}
-                    />
-                    <span className="text-neutral-700">{source.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
     </div>

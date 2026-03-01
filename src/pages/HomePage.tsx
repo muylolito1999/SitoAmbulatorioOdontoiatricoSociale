@@ -14,7 +14,7 @@ export default function HomePage() {
       <Hero />
       <ChiSiamo />
       <CosaFacciamo />
-      <Impatto />
+      {import.meta.env.VITE_SHOW_IMPACT === 'true' && <Impatto />}
       <ComeFunziona />
       <Timeline />
       <Trasparenza />
