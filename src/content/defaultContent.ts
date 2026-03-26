@@ -2,9 +2,9 @@ import type { SiteContent } from './types';
 
 export const defaultContent: SiteContent = {
   hero: {
-    title: 'Ambulatorio Odontoiatrico Solidale',
+    title: 'Ambulatorio Odontoiatrico Solidale OdV Bologna',
     subtitle:
-      'Fragilità sociale ed economica\nAmbulatorio Odontoiatrico Solidale dedicato alle persone emarginate e disagiate: cure odontoiatriche gratuite per chi non può permettersele, un sorriso per tutti.\nUn progetto da sostenere, un modello da riprodurre!',
+      'Un sorriso per tutti.\nAmbulatorio Odontoiatrico Solidale dedicato a persone con fragilità sociale ed economica.\nGarantiamo cure odontoiatriche gratuite a chi non può permettersele, con particolare attenzione a bambini e anziani, raggiunti grazie alla rete di Caritas, Servizi pubblici e Associazioni di volontariato del territorio.\nUn progetto da sostenere, un modello da replicare.',
     backgroundImage: '',
     ctaPrimary: { text: 'Come funziona', href: '#come-funziona' },
     ctaSecondary: { text: 'Sostienici', href: '/support' },
@@ -25,13 +25,13 @@ export const defaultContent: SiteContent = {
         icon: '🤝',
         title: 'Accoglienza',
         description:
-          'Accogliamo le persone in vulnerabilità socio-economica segnalate dai Servizi sociali del Comune di Bologna, da Caritas, da Associazioni di volontariato del territorio.',
+          'Accogliamo persone in situazione di fragilità sociale ed economica, con particolare attenzione a bambini ed anziani. Le persone sono accolte grazie alla rete di Caritas, Servizi pubblici e Associazioni di volontariato del territorio.',
       },
       {
         icon: '🦷',
         title: 'Cure Dentali',
         description:
-          'Detartrasi, igiene orale professionale, terapie conservative, terapie endodontiche, terapie parodontali, estrazioni, terapie chirurgiche, riabilitazioni protesiche mobili, prestazioni di odontoiatria pediatrica, terapie ortopedico-ortodontiche, a titolo gratuito.',
+          'Igiene orale professionale, terapie conservative, terapie endodontiche, terapie parodontali, estrazioni, terapie chirurgiche, riabilitazioni protesiche mobili, prestazioni di odontoiatria pediatrica, terapie ortopedico-ortodontiche, a titolo gratuito.',
       },
       {
         icon: '🛡️',
@@ -126,14 +126,9 @@ export const defaultContent: SiteContent = {
     subtitle: 'Tutti i trattamenti sono eseguiti da professionisti qualificati e iscritti all\'albo, utilizzando materiali certificati e seguendo i più alti standard di sicurezza e igiene.',
     steps: [
       {
-        title: 'Contatto Iniziale',
-        description:
-          'Telefonare o inviare email alla segreteria per richiedere informazioni.',
-      },
-      {
         title: 'Segnalazione',
         description:
-          'I pazienti sono inviati dai Servizi Sociali del Comune di Bologna, dalla Caritas di Bologna, da Associazioni di volontariato del territorio, da privati che si fanno garanti della vulnerabilità socio-economica della persona.',
+          'Le persone vengono individuate e segnalate da Caritas. Dai Servizi pubblici e dalle Associazioni di volontariato del territorio, che si fanno garanti della situazione di fragilità della persona.',
       },
       {
         title: 'Contatto',
