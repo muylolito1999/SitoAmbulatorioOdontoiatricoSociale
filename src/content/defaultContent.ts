@@ -265,7 +265,7 @@ export const defaultContent: SiteContent = {
       'Il tuo contributo ci aiuta a garantire cure dentali gratuite a chi ne ha più bisogno. Ogni donazione, grande o piccola, fa la differenza.',
     donateText:
       'L\'Ambulatorio Odontoiatrico Solidale opera esclusivamente grazie alle donazioni di privati cittadini, aziende e fondazioni. Il tuo contributo è fondamentale per continuare a garantire cure gratuite a chi ne ha bisogno.',
-    donateIban: 'IT00 A000 0000 0000 0000 0000 000',
+    donateIban: 'IT62 S030 6909 6061 0000 0180 941',
     donationCards: [
       {
         title: 'Donazione Economica',
