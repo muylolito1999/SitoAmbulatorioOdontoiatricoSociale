@@ -283,7 +283,7 @@ export const defaultContent: SiteContent = {
     bankIntestatario: 'Ambulatorio Odontoiatrico Solidale OdV',
     bankCausale: 'Donazione liberale',
     taxNote: 'Tutte le donazioni sono fiscalmente deducibili. Conserva la ricevuta del bonifico per la dichiarazione dei redditi.',
-    cinquePerMilleCF: 'XXXXXXXXXXXXXXXX',
+    cinquePerMilleCF: '91436600372',
     cinquePerMilleText: 'Puoi destinare il tuo 5x1000 all\'Ambulatorio Odontoiatrico Solidale OdV. È un gesto che non ti costa nulla ma fa una grande differenza!',
   },
 
