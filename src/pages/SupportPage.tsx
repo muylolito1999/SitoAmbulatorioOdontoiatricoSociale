@@ -4,6 +4,7 @@ import SectionHeading from '../components/ui/SectionHeading';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
+import CopyableValue from '../components/ui/CopyableValue';
 
 const cardStyles: { icon: ReactNode; borderColor: string; iconBg: string }[] = [
   {
@@ -92,10 +93,7 @@ export default function SupportPage() {
                     <p className="mt-1 text-sm text-neutral-800">{supportPage.bankIntestatario}</p>
                   </div>
                   {supportPage.donateIban && (
-                    <div>
-                      <span className="text-xs font-semibold uppercase text-neutral-500">IBAN</span>
-                      <p className="mt-1 font-mono text-sm text-neutral-800">{supportPage.donateIban}</p>
-                    </div>
+                    <CopyableValue label="IBAN" value={supportPage.donateIban} />
                   )}
                   <div>
                     <span className="text-xs font-semibold uppercase text-neutral-500">Causale</span>
@@ -115,10 +113,11 @@ export default function SupportPage() {
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">
                   {supportPage.cinquePerMilleText}
                 </p>
-                <div className="mt-4 rounded-lg bg-neutral-50 p-3">
-                  <span className="text-xs font-semibold uppercase text-neutral-500">Codice Fiscale</span>
-                  <p className="mt-1 font-mono text-sm text-neutral-800">{supportPage.cinquePerMilleCF}</p>
-                </div>
+                <CopyableValue
+                  label="Codice Fiscale"
+                  value={supportPage.cinquePerMilleCF}
+                  className="mt-4 rounded-lg bg-neutral-50 p-3"
+                />
                 <p className="mt-4 text-sm leading-relaxed text-neutral-600">
                   Indica semplicemente il nostro codice fiscale nella tua dichiarazione dei redditi, nell'apposita sezione dedicata al sostegno del volontariato.
                 </p>
